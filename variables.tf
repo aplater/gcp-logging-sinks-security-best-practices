@@ -32,3 +32,9 @@ variable "location" {
   type        = "string"
   default     = "US"
 }
+
+variable "table_expiration" {
+  description = "When should tables expire in microseconds"
+  type        = "string"
+  default     = "86400000" # set to 24 hours, adjust to match your policy/requirements
+}
